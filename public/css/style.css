@@ -1,10 +1,90 @@
-h1{
-    color: red;
+h1 {
+  color: red;
 }
-.completed{
-    text-decoration: line-through;
-    color: gray;
+.completed {
+  text-decoration: line-through;
+  color: gray;
 }
-.not{
-    text-decoration: underline;
+.not {
+  text-decoration: underline;
 }
+
+.ul {
+}
+
+.invItem {
+}
+
+.itemName {
+}
+
+.SKU {
+}
+
+.quantity {
+}
+
+.setQuantity {
+}
+
+.del {
+}
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+ul.card-panel {
+  margin: 5rem;
+  padding: 3rem;
+}
+li {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
+.col-head {
+  background-color: lightgray;
+  font-weight: bold;
+}
+.skuCol {
+  width: 20%;
+}
+.nameCol {
+  width: 30%;
+}
+.quantityCol {
+  width: 25%;
+}
+.availableCol {
+  width: 25%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
