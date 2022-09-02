@@ -1,35 +1,3 @@
-h1 {
-  color: red;
-}
-.completed {
-  text-decoration: line-through;
-  color: gray;
-}
-.not {
-  text-decoration: underline;
-}
-
-.ul {
-}
-
-.invItem {
-}
-
-.itemName {
-}
-
-.SKU {
-}
-
-.quantity {
-}
-
-.setQuantity {
-}
-
-.del {
-}
-
 /* Box Model Hack */
 * {
   box-sizing: border-box;
@@ -53,12 +21,12 @@ h1 {
 /* BASE STYLES
 /*******************************************/
 
-body {
-}
-
 /******************************************
 /* LAYOUT
 /*******************************************/
+.wrapper {
+  padding: 5rem;
+}
 ul.card-panel {
   margin: 5rem;
   padding: 3rem;
@@ -88,3 +56,6 @@ li {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+h1 {
+  color: red;
+}
