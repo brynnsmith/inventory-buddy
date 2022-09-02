@@ -1,63 +1,65 @@
 /* Box Model Hack */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Clear fix hack */
 .clearfix:after {
-    content: ".";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-   clear: both;
+  clear: both;
 }
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
-
 /******************************************
 /* LAYOUT
 /*******************************************/
 .wrapper {
-    padding: 5rem;
+  padding: 5rem;
 }
 ul.card-panel {
-    margin: 5rem;
-    padding: 3rem;
+  margin: 5rem;
+  padding: 3rem;
 }
 li {
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
 }
 .col-head {
-    background-color: lightgray;
-    font-weight: bold;
+  background-color: lightgray;
+  font-weight: bold;
 }
 .skuCol {
-    width: 20%;
+  width: 20%;
 }
 .nameCol {
-    width: 30%;
+  width: 30%;
 }
 .quantityCol {
-    width: 25%;
+  width: 25%;
 }
 .availableCol {
-    width: 25%;
+  width: 25%;
 }
-
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-h1{
-   color: red;
-}        
+h1 {
+  color: red;
+}
+
+i {
+  font-size: 1.5rem;
+}
