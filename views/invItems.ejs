@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    <div class="wrapper card-panel">
-			<h1 class="card-title">Inventory Items</h1>
-			<ul class="card subcard">
-				<!--
+	<div class="wrapper card-panel">
+		<h1 class="card-title">Inventory Items</h1>
+		<ul class="card subcard">
+			<!--
 				<body>
 					<header>
 					</header>
@@ -48,35 +51,47 @@
 			
 			-->
 			<li class="col-head">
-							<div class="skuCol">SKU</div>
-							<div class="nameCol">Name</div>
-							<div class="quantityCol">Quantity</div>
-							<div class="availableCol">Available</div>
-					</li>
-			<% items.forEach( el => { %>
-							<li class='invItem' data-id='<%=el._id%>'>
-									<span class='skuCol'><%= el.SKU %></span>
-									<span class='nameCol'><%= el.itemName %></span>
-									<span class='quantityCol'><%= el.quantity%></span>
-									<span class='availableCol'><%= el.quantity > 0 %></span>
-									<!--
+				<div class="skuCol">SKU</div>
+				<div class="nameCol">Name</div>
+				<div class="quantityCol">Quantity</div>
+				<div class="availableCol">Available</div>
+			</li>
+			<% items.forEach( el=> { %>
+				<li class='invItem' data-id='<%=el._id%>'>
+					<span class='skuCol'>
+						<%= el.SKU %>
+					</span>
+					<span class='nameCol'>
+						<%= el.itemName %>
+					</span>
+					<span class='quantityCol'>
+						<%= el.quantity%>
+					</span>
+					<span class='availableCol'>
+						<%= el.quantity> 0 ? "Yes" : "No" %>
+					</span>
+					<span class="del">
+						<i class="bx bx-trash"></i>
+					</span>
+					<!--
 												<input type="number" placeholder="Change Quantity" name="setQuantity" label="Change Quantity">
 												<input class='submitQuantity' type="submit">
 									<span class='del'> Delete </span>
 									-->
-							</li>
-			<% }) %>
-			</ul>
-			<h2>Add an Item</h2>
-			<form action="/invItems/createInvItem" method='POST'>
-					<input type="text" placeholder="Enter Item Name" name='itemName'>
-					<input type="number" placeholder="Enter SKU" name='SKU'>
-					<input type="number" placeholder="Enter Quantity" name='quantity'>
-					<input type="submit">
-			</form>
-			<a href="/logout">Logout</a>
-		</div>
+				</li>
+				<% }) %>
+		</ul>
+		<h2>Add an Item</h2>
+		<form action="/invItems/createInvItem" method='POST'>
+			<input type="text" placeholder="Enter Item Name" name='itemName'>
+			<input type="number" placeholder="Enter SKU" name='SKU'>
+			<input type="number" placeholder="Enter Quantity" name='quantity'>
+			<input type="submit">
+		</form>
+		<a href="/logout">Logout</a>
+	</div>
 
-    <script src="js/script.js"></script>
+	<script src="js/script.js"></script>
 </body>
+
 </html>
