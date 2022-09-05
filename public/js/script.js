@@ -1,12 +1,14 @@
 const deleteBtn = document.querySelectorAll('.del')
 const invItem = document.querySelectorAll('.invItem')
-const submitQuantity = document.querySelector('submitQuantity');
+const changeQuantity = document.querySelectorAll('.changeQuantity')
 
-Array.from(deleteBtn).forEach((el)=>{
+Array.from(deleteBtn).forEach((el) =>{
     el.addEventListener('click', deleteItem)
 })
 
-submitQuantity.addEventListener("click", setQuantity)
+Array.from(changeQuantity).forEach((el) => {
+    el.addEventListener("click", setQuantity)
+})
 
 async function deleteItem(){
     const invItem = this.parentNode.dataset.id
@@ -27,18 +29,22 @@ async function deleteItem(){
 }
 
 async function setQuantity(){
-    const newQuantity = this.parentNode.dataset.id
-    
+    const invItem = this.parentNode.parentNode.dataset.id
+    console.log(invItem);
+    const quantity = this.previousElementSibling.value
+    console.log(quantity)
     try{
         const response = await fetch('invItems/setQuantity', {
             method: 'put',
             headers: {'Content-type': 'application/json'},
             body: JSON.stringify({
-                'quantity': newQuantity
+                'itemIdFromJSFile': invItem,
+                'quantity': quantity
             })
         })
         const data = await response.json()
         console.log(data)
+        console.log("this is what's logging to console")
         location.reload()
     }catch(err){
         console.log(err)
