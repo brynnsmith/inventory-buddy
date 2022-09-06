@@ -10,12 +10,35 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://use.typekit.net/lcz4pag.css">
 </head>
 
 <body>
+
+	<nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Inventory Buddy</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a href="/logout">Logout</a></li>
+        
+      </ul>
+    </div>
+		<ul class="sidenav" id="mobile-demo">
+			<li><a href="/">Home</a></li>
+			<li><a href="/logout">Logout</a></li>
+			
+		</ul>
+  </nav>
+
+  
+
 	<div class="wrapper card-panel">
 		<h1 class="card-title">Inventory Items</h1>
-		<ul class="card subcard">
+		
+		<div class="card">
+		<ul class="card-content subcard">
 
 			<li class="col-head">
 				<div class="skuCol">SKU</div>
@@ -39,23 +62,54 @@
 					</span>
 					<span class="edit">
 						<input type="number" class="newQuantity" name="newQuantity">
-						<span class="changeQuantity"> Change Quantity </span>
+						<span class="changeQuantity btn"> Change Quantity </span>
 					</span>
 					<span class="del">
 						<i class="bx bx-trash"></i>
 					</span>
 				</li>
 				<% }) %>
-		</ul>
-		<h2>Add an Item</h2>
+			</ul>
+		</div>
+		<div class="card add-card">
+		<h2 class="add-item">Add an Item</h2>
+
+		<div class="card-content">
 		<form action="/invItems/createInvItem" method='POST'>
 			<input type="text" placeholder="Enter Item Name" name='itemName'>
 			<input type="number" placeholder="Enter SKU" name='SKU'>
 			<input type="number" placeholder="Enter Quantity" name='quantity'>
-			<input type="submit">
+			<input class='btn' type="submit">
 		</form>
-		<a href="/logout">Logout</a>
 	</div>
+
+		
+	</div>
+</div>
+	
+  <footer class="page-footer">
+		<div class="container footer-wrapper">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Footer Content</h5>
+					<p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">Links</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+			© 2022 Copyright Text
+			</div>
+		</div>
+	</footer>
 
 	<script src="js/script.js"></script>
 </body>

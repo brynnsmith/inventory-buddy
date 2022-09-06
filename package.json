@@ -27,10 +27,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kathryncodes/inventory-buddy.git"
+    "url": "git+https://github.com/brynnsmith/inventory-buddy.git"
   },
   "bugs": {
-    "url": "https://github.com/kathryncodes/inventory-buddy/issues"
+    "url": "https://github.com/brynnsmith/inventory-buddy/issues"
   },
-  "homepage": "https://github.com/kathryncodes/inventory-buddy#readme"
+  "homepage": "https://github.com/brynnsmith/inventory-buddy#readme"
 }
