@@ -20,22 +20,29 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
+body {
+  font-family: "social-gothic", "sans-serif";
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
 .wrapper {
   padding: 5rem;
 }
+
+nav {
+  background-image: linear-gradient( #130e46 ,dodgerblue);
+ 
+}
 ul.card-panel {
   margin: 5rem;
   padding: 3rem;
 }
-li {
+.subcard li {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2, 25%) 10% 10% 25% 1fr ;
-  border: 1px solid red;
+  
 }
 
 .col-head {
@@ -43,13 +50,22 @@ li {
   font-weight: bold;
 }
 
-li > span{
-  border: 1px solid red;
+.subcard {
+  display: block;
+  text-align: center;
 }
 
+.subcard span {
+  font-family: "Tahoma";
+}
+
+.subcard li:nth-of-type(odd) {
+  background-color: lightgray;
+}
 .changeQuantity{
   cursor:pointer;
   background: pink;
+  font-size: 0.6rem;
 }
 
 .edit{
@@ -71,5 +87,62 @@ h1 {
 }
 
 i {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+li > span {
+  margin: auto;
+}
+
+/* 
+input .new-quantity {
+  
+}
+
+.invItem {
+  
+} */
+
+.subcard col-head .inv-item span {
+  margin: auto;
+}
+
+.card-title {
+  font-size: 1.6rem;
+  color: #666
+}
+.page-footer {
+  background-color: #130e46;
+  margin-top: -1rem;
+}
+
+.add-item {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card {
+  padding: 2%;
+  
+}
+
+
+
+.btn {
+  background-color: #130e46;
+}
+.btn:hover{
+  background-color: dodgerblue;
+}
+
+.nav-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.login-card {
+  max-width: 25%;
+  margin: 5% auto;
 }
