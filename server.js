@@ -9,7 +9,7 @@ const logger = require('morgan')
 const connectDB = require('./config/database')
 const mainRoutes = require('./routes/main')
 const invItemsRoutes = require('./routes/invItems')
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 8000
 
 require('dotenv').config({path: './config/.env'})
 
