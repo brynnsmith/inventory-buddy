@@ -1,0 +1,89 @@
+/******************************************
+/* Home Page
+/*******************************************/
+h1 {
+    color: white;
+    font-size: 6em;
+    line-height: 1.1em;
+}
+
+body {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    background-image: url("img/invbuddy-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "social-gothic", "sans-serif";
+    height: 100vh;
+    align-items: center;
+}
+
+.heroContent {
+    margin-top: -80px;
+    width: 30%;
+    margin-left: 5%;
+}
+
+button {
+    padding: 15px 30px;
+    font-family: "social-gothic", "sans-serif";
+    font-size: 2rem;
+    color: #00053c;
+    background: rgba(255, 255, 255, 0.877);
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+button:hover {
+    background: #030625;
+    color: #29c4f3;
+}
+
+.signUp {
+    display: flex;
+    background-image: url("img/inv-loginbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "social-gothic", "sans-serif";
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.signupBox {
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+    color: white;
+}
+
+input {
+    display: block;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.788);
+    width: 100%;
+    border-radius: 10px;
+    margin: 14px auto;
+    font-size: 1.2em;
+}
+
+input:focus { 
+    border-color: #29c4f3;
+}
+
+.submit {
+    width: 40%;
+    margin-top: 14px;
+}
+
+.authH1 {
+    margin: 10px 0 20px 0;
+}
+
+.invUpperTitle {
+    color: #29c4f3;
+    font-size: 2em;
+}
