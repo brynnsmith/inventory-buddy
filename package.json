@@ -1,5 +1,5 @@
 {
-  "name": "todo-mvc-auth-local",
+  "name": "inventory-buddy",
   "version": "1.0.0",
   "description": "Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).",
   "main": "server.js",
