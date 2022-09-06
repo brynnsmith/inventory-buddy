@@ -31,9 +31,11 @@ async function deleteItem(){
 async function setQuantity(){
     const invItem = this.parentNode.parentNode.dataset.id
     console.log(invItem);
-    const quantity = this.previousElementSibling.value
-    console.log(quantity)
+    const quantity = parseInt(this.previousElementSibling.value)
+    console.log(`quantity: ${quantity} typeof: ${typeof(quantity)}`)
     try{
+        if(quantity >= 0){
+        console.log(`quantity is ${quantity}`)
         const response = await fetch('invItems/setQuantity', {
             method: 'put',
             headers: {'Content-type': 'application/json'},
@@ -44,6 +46,7 @@ async function setQuantity(){
         })
         const data = await response.json()
         console.log(data)
+    }
         console.log("this is what's logging to console")
         location.reload()
     }catch(err){
