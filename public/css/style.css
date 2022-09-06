@@ -33,24 +33,34 @@ ul.card-panel {
 }
 li {
   list-style: none;
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(2, 25%) 10% 10% 25% 1fr ;
+  border: 1px solid red;
 }
+
 .col-head {
   background-color: lightgray;
   font-weight: bold;
 }
-.skuCol {
-  width: 20%;
+
+li > span{
+  border: 1px solid red;
 }
-.nameCol {
-  width: 30%;
+
+.changeQuantity{
+  cursor:pointer;
+  background: pink;
 }
-.quantityCol {
-  width: 25%;
+
+.edit{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
-.availableCol {
-  width: 25%;
+
+.edit > input{
+  max-width: 50%;
 }
 
 /******************************************
