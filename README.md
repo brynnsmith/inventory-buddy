@@ -1,8 +1,9 @@
 # Inventory Buddy
-Access inventory anytime on web, tablet or mobile. Inventory Buddy is a robust and light-weight inventory management application designed to help businesses maintain perfect control over every unit of stock. 
+
+Access inventory anytime on web, tablet or mobile. Inventory Buddy is a robust and light-weight inventory management application designed to help businesses maintain perfect control over every unit of stock.
 
 **Link to project:**
-https://inventory-buddy.herokuapp.com/ 
+https://inventory-buddy.herokuapp.com/
 
 <img src='https://brynnsmith.com/images/InventoryBuddy.jpg' alt='image of AI figure infront of inventory mangement software'>
 
@@ -27,15 +28,14 @@ Ming Lee Ng : <a href="https://github.com/redconOne">Github</a> - <a href="https
 Vu Huynh : <a href="https://github.com/vu5381">Github</a> - <a href="https://twitter.com/vuhuynh91609962">Twitter</a> - <a href="https://www.linkedin.com/in/vu-huynh-duy">LinkedIn</a><br>
 Jason Parker: <a href="https://github.com/jparrker/">Github</a> - <a href="https://twitter.com/jasonkkparker">Twitter</a> - <a href="https://www.linkedin.com/in/jsonparker/">LinkedIn</a><br>
 Kathryn :<br>
-Ryan : <br>
+Ryan Lowe: <a href="https://github.com/BlipOnNobodysRadar">Github</a> - <a href="https://twitter.com/Ryan_CodeBlip">Twitter</a> - <a href="https://www.linkedin.com/in/ryan-lowe-codeblip/">LinkedIn</a><br><br>
 
-## Packages/Dependencies used 
+## Packages/Dependencies used
 
 bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mongodb, mongoose, morgan, nodemon, passport, passport-local, validator
 
 ### Things to add for local build
 
-  - Create a `.env` file and add the following as `key: value` 
-  - PORT: 8000 (can be any port example: 3000) 
-  - DB_STRING: `your database URI` 
- 
+- Create a `.env` file and add the following as `key: value`
+- PORT: 8000 (can be any port example: 3000)
+- DB_STRING: `your database URI`
