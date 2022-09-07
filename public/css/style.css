@@ -45,6 +45,10 @@ ul.card-panel {
   
 }
 
+.card-panel{
+  margin-top: 0;
+}
+
 .col-head {
   background-color: lightgray;
   font-weight: bold;
