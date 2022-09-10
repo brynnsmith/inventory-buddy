@@ -27,7 +27,7 @@ Brynn Smith : <a href="https://github.com/brynnsmith">Github</a> - <a href="http
 Ming Lee Ng : <a href="https://github.com/redconOne">Github</a> - <a href="https://twitter.com/MingLeeNg1">Twitter</a> - <a href="https://www.linkedin.com/in/mingleeng/">LinkedIn</a><br>
 Vu Huynh : <a href="https://github.com/vu5381">Github</a> - <a href="https://twitter.com/vuhuynh91609962">Twitter</a> - <a href="https://www.linkedin.com/in/vu-huynh-duy">LinkedIn</a><br>
 Jason Parker: <a href="https://github.com/jparrker/">Github</a> - <a href="https://twitter.com/jasonkkparker">Twitter</a> - <a href="https://www.linkedin.com/in/jsonparker/">LinkedIn</a><br>
-Kathryn :<br>
+Kathryn Johnson: <a href="https://github.com/kathryncodes">Github</a> - <a href="https://twitter.com/kathryn_codes">Twitter</a> - <a href="https://www.linkedin.com/in/kathryncodes">LinkedIn</a><br>
 Ryan Lowe: <a href="https://github.com/BlipOnNobodysRadar">Github</a> - <a href="https://twitter.com/Ryan_CodeBlip">Twitter</a> - <a href="https://www.linkedin.com/in/ryan-lowe-codeblip/">LinkedIn</a><br><br>
 
 ## Packages/Dependencies used
